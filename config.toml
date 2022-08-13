@@ -1,0 +1,86 @@
+baseURL = "/"
+languageCode = "en-es"
+title = "BP"
+theme = "ink"
+paginate = 5
+
+copyright = "© Copyright notice"
+# Demo only
+#ignoreErrors = ["error-missing-instagram-accesstoken"]
+
+[permalinks]
+  posts = "/:year/:month/:title"
+
+[params]
+	subtitle = "Blog creado para sentar las diferentes cosas que aprendo sobre programación."
+
+	# Optional 64x64 avatar image.
+	avatar = "http://www.avatarsinpixels.com/minipix/eyJIYWlyTG93ZXIiOiIxNSIsIkJvZHkiOiIxIiwiRXllcyI6IjMiLCJNb3V0aCI6IjUiLCJTb2NrcyI6IjUiLCJTaG9lcyI6IjEiLCJQYW50cyI6IjEiLCJUb3AiOiIxMyIsIkphY2tldCI6IjciLCJIYWlyIjoiMzEiLCJleWVzVG9uZSI6IjAwMDAwMCIsImV5ZXNUb25lMiI6IjU0MTJjYiIsIm1hc2tUb25lIjoiOGE1NDc4IiwiaGFpclRvbmUiOiIzNjI5MTgiLCJoYWlyVG9uZTIiOiIyZDMyNzQiLCJ1bmRlcndlYXJUb25lIjoiMGRiNmRmIiwidW5kZXJ3ZWFyVG9uZTIiOiJlNTIyZGUiLCJwYW50c1RvbmUiOiIzNjVkOGQiLCJwYW50c1RvbmUyIjoiNTA3OWFjIiwidG9wVG9uZSI6ImQ1ZGZlYiIsInRvcFRvbmUyIjoiOTI2NTMzIiwid2luZ3NUb25lIjoiMjViZTcyIiwid2luZ3NUb25lMiI6IjU5NDQyNyIsInNob2VzVG9uZSI6IjBlMGQyNSIsInNvY2tzVG9uZSI6IjVlZmUxZSIsInNvY2tzVG9uZTIiOiI2ZmRhMjQiLCJnbG92ZXNUb25lIjoiOWRmYmM0IiwiZ2xvdmVzVG9uZTIiOiJkZjVmYTUiLCJoYXRUb25lIjoiMTRhOTE2IiwiaGF0VG9uZTIiOiI3ZmNjNTkiLCJjYXBlVG9uZSI6Ijg2NDMwYyIsImNhcGVUb25lMiI6IjVjNzNhZSIsImJlbHRUb25lIjoiZmJlNTdjIiwiamFja2V0VG9uZSI6ImIxZTJmZiIsImphY2tldFRvbmUyIjoiYmE0M2ZlIiwibmVja1RvbmUiOiI1MTRjMDUiLCJuZWNrVG9uZTIiOiIzN2JjNTAifQ==/1/show.png"
+
+	featherIconsCDN = false
+
+	# Enable a table of contents
+	toc = true
+
+	# Max tags
+  	maxTags = 7
+
+  # Define words per minute to approximate reading time
+  wpm = 250
+
+
+# Nav.
+[[menu.main]]
+name = "Inicio"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "Lista Posts"
+url = "/posts"
+weight = 2
+
+[[menu.main]]
+name = "Sobre mí"
+url = "/about"
+weight = 3
+
+[[menu.main]]
+name = "Tags"
+url = "/tags"
+weight = 4
+
+[[params.social]]
+name = "Github"
+icon = "github"
+url = "https://github.com/PereyraPaula"
+
+[[params.social]]
+name = "Linkedin"
+icon = "linkedin"
+url = "https:///linkedin.com/in/paula-pereyra-b1031622a"
+
+#[[params.social]]
+#name = "RSS"
+#icon = "rss"
+#url = "/index.xml"
+
+[taxonomies]
+   tag = "tags"
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = true
+    lineNumbersInTable = true
+    noClasses = true
+    style = "github"
+    tabWidth = 4
+
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = true
+    startLevel = 2 
