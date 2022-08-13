@@ -1,6 +1,6 @@
 baseURL = "/"
 languageCode = "en-es"
-title = "BP"
+title = "Paula Pereyra"
 theme = "ink"
 paginate = 5
 
@@ -12,7 +12,7 @@ copyright = "© Copyright notice"
   posts = "/:year/:month/:title"
 
 [params]
-	subtitle = "Blog creado para sentar las diferentes cosas que aprendo sobre programación."
+	subtitle = "Blog creado escribir sobre programación."
 
 	# Optional 64x64 avatar image.
 	avatar = "http://www.avatarsinpixels.com/minipix/eyJIYWlyTG93ZXIiOiIxNSIsIkJvZHkiOiIxIiwiRXllcyI6IjMiLCJNb3V0aCI6IjUiLCJTb2NrcyI6IjUiLCJTaG9lcyI6IjEiLCJQYW50cyI6IjEiLCJUb3AiOiIxMyIsIkphY2tldCI6IjciLCJIYWlyIjoiMzEiLCJleWVzVG9uZSI6IjAwMDAwMCIsImV5ZXNUb25lMiI6IjU0MTJjYiIsIm1hc2tUb25lIjoiOGE1NDc4IiwiaGFpclRvbmUiOiIzNjI5MTgiLCJoYWlyVG9uZTIiOiIyZDMyNzQiLCJ1bmRlcndlYXJUb25lIjoiMGRiNmRmIiwidW5kZXJ3ZWFyVG9uZTIiOiJlNTIyZGUiLCJwYW50c1RvbmUiOiIzNjVkOGQiLCJwYW50c1RvbmUyIjoiNTA3OWFjIiwidG9wVG9uZSI6ImQ1ZGZlYiIsInRvcFRvbmUyIjoiOTI2NTMzIiwid2luZ3NUb25lIjoiMjViZTcyIiwid2luZ3NUb25lMiI6IjU5NDQyNyIsInNob2VzVG9uZSI6IjBlMGQyNSIsInNvY2tzVG9uZSI6IjVlZmUxZSIsInNvY2tzVG9uZTIiOiI2ZmRhMjQiLCJnbG92ZXNUb25lIjoiOWRmYmM0IiwiZ2xvdmVzVG9uZTIiOiJkZjVmYTUiLCJoYXRUb25lIjoiMTRhOTE2IiwiaGF0VG9uZTIiOiI3ZmNjNTkiLCJjYXBlVG9uZSI6Ijg2NDMwYyIsImNhcGVUb25lMiI6IjVjNzNhZSIsImJlbHRUb25lIjoiZmJlNTdjIiwiamFja2V0VG9uZSI6ImIxZTJmZiIsImphY2tldFRvbmUyIjoiYmE0M2ZlIiwibmVja1RvbmUiOiI1MTRjMDUiLCJuZWNrVG9uZTIiOiIzN2JjNTAifQ==/1/show.png"
@@ -41,13 +41,13 @@ url = "/posts"
 weight = 2
 
 [[menu.main]]
-name = "Sobre mí"
-url = "/about"
+name = "Tags"
+url = "/tags"
 weight = 3
 
 [[menu.main]]
-name = "Tags"
-url = "/tags"
+name = "Sobre mí"
+url = "/about"
 weight = 4
 
 [[params.social]]
