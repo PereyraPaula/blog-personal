@@ -1,5 +1,7 @@
 backend:
   name: git-gateway
+  repo: PereyraPaula/blog-personal
+
 
 media_folder: "static/images/uploads" # Folder where user uploaded files should go
 public_folder: "/images/uploads"
