@@ -19,16 +19,6 @@
 					<h1 class="title">{{ .Title }}</h1>
 				</div>
 			</div>
-
-			
-			{{ if and (gt .WordCount 400 ) (.Site.Params.toc) }}
-			<aside class="toc">
-				<header>
-				<h2>Contents</h2>
-				</header>
-				{{.TableOfContents}}
-			</aside>
-			{{ end }}
 					
 			<div class="markdown">
 				{{ .Content }}

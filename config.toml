@@ -81,6 +81,6 @@ url = "https:///linkedin.com/in/paula-pereyra-b1031622a"
     tabWidth = 4
 
   [markup.tableOfContents]
-    endLevel = 3
+    endLevel = 0
     ordered = true
-    startLevel = 2 
+    startLevel = 0
