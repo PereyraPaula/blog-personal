@@ -1,6 +1,5 @@
 backend:
-  name: github
-  repo: PereyraPaula/blog-personal
+  name: git-gateway
   branch: main
 
 media_folder: "static/images/uploads" # Folder where user uploaded files should go
