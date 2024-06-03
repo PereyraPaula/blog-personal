@@ -1,0 +1,47 @@
+---
+layout: layout.ejs
+head: Inicio
+title: Hola, soy Paula
+description: Acá encontrarán las cosas que vaya aprendiendo y quiera compartir
+showImage: true
+pagination:
+  data: collections.posts
+  size: 6
+  alias: posts
+---
+
+<div class="pb-5 pt-3" style="min-height:62vh;">
+  <div class="row">
+    <% posts.forEach((post) => { %>
+      <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+        <div class="card" style="width: 100%;">
+          <img src="<%= post.data.mainImage %>" class="card-img-top" alt="<%= title %>">
+          <div class="card-body">
+            <h2 class="card-title fs-5">
+              <a href="<%= post.data.page.filePathStem %>"><%= post.data.title %></a>
+            </h2>
+            <p class="card-text"><%= post.data.description %></p>
+            <div class="d-flex gap-3">
+              <a href="<%= post.data.page.filePathStem %>" class="btn btn-primary">Ver más</a>
+              <i class="text-body">
+                <%= new Date(post.date).toLocaleDateString('es-ES', { year: 'numeric', month: 'short', day: 'numeric' }) %>
+              </i>
+            </div>
+          </div>
+        </div>
+      </div>
+    <% }); %>  
+    <p>
+      <% if (pagination.href.previous) { %>
+        <a href="<%= pagination.href.previous %>">Previous</a>
+      <% } else { %>
+        Previous
+      <% } %> / 
+      <% if (pagination.href.next) { %>
+        <a href="<%= pagination.href.next %>">Next</a>
+      <% } else { %>
+        Next
+      <% } %>
+    </p>   
+  </div>
+</div>

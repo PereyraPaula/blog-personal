@@ -1,0 +1,12 @@
+<%- include('head') %>
+<body data-bs-theme="dark">
+  <%- include('navbar') %>
+  <main class="container pb-5 pt-5" style="min-height: calc(100vh - 56px - 122.5px);">
+    <h2 class="text-secondary"><%- title %></h2>
+    <% if (typeof date !== 'undefined' && date) { %>
+      <h6 class="text-body"><%= new Date(date).toLocaleDateString('es-ES', { year: 'numeric', month: 'short', day: 'numeric' }) %></h6>
+    <% } %>
+    <img src="<%= mainImage %>" class="w-100 h-50 pb-5 pt-4" alt="<%= title %>">
+    <%- content %>
+  </main>
+  <%- include('footer.ejs') %>

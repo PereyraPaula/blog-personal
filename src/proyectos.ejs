@@ -1,0 +1,18 @@
+---
+layout: layout.ejs
+head: Proyectos
+title: Proyectos realizados
+description: Algunos proyectos hechos para otros desarrolladores (o que me pueden servir) y otros para un usuario final.
+---
+
+<div style="min-height: 55vh;">
+  <% collections.projects.forEach((project) => { %>
+    <div class="card my-3">
+      <h5 class="card-header"><%= project.data.title %></h5>
+      <div class="card-body">
+        <p class="card-text"><%= project.data.description %></p>
+        <a href="<%= project.data.link %>" target="_blank" class="btn btn-primary">Ver más</a>
+      </div>
+    </div>
+  <% }); %> 
+</div>
