@@ -16,6 +16,23 @@ img {
   width: 100%;
 }
 
+.container-all-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ccc;
+}
+
+td {
+  border-width: 1px;
+}
+
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
  * Copyright 2011-2024 The Bootstrap Authors
@@ -432,6 +449,8 @@ svg {
 table {
   caption-side: bottom;
   border-collapse: collapse;
+  border: 1px solid #ccc;
+  padding: 0.5rem;
 }
 
 caption {
@@ -454,7 +473,8 @@ td,
 th {
   border-color: inherit;
   border-style: solid;
-  border-width: 0;
+  border-width: .5px;
+  padding: 10px;
 }
 
 label {

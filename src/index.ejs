@@ -10,13 +10,13 @@ pagination:
   alias: posts
 ---
 
-<div class="pb-5 pt-3" style="min-height:62vh;">
+<div class="pb-5 pt-3">
   <div class="row">
     <% posts.forEach((post) => { %>
       <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
-        <div class="card" style="width: 100%;">
+        <div class="card" style="width: 100%; min-height: 100%;display: flex;">
           <img src="<%= post.data.mainImage %>" class="card-img-top" alt="<%= title %>">
-          <div class="card-body">
+          <div class="card-body container-all-card">
             <h2 class="card-title fs-5">
               <a href="<%= post.data.page.filePathStem %>"><%= post.data.title %></a>
             </h2>
