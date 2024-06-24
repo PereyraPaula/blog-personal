@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color">
-  <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/assets/css/default.min.css">
-  <link rel="stylesheet" href="/assets/css/an-old-hope.css">
+  <link rel="stylesheet" href="/blog-personal/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/blog-personal/assets/css/default.min.css">
+  <link rel="stylesheet" href="/blog-personal/assets/css/an-old-hope.css">
   
     <title>NPM Link</title>
   
@@ -15,19 +15,18 @@
 <body data-bs-theme="dark">
   <nav class="navbar navbar-expand-lg container">
   <div class="container-fluid">
-    <a class="navbar-brand text-primary" href="/"><strong>SimpleProgramming</strong></a>
+    <a class="navbar-brand text-primary" href="/blog-personal/"><strong>SimpleProgramming</strong></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo01">
       <div class="d-flex flex-column flex-md-row flex-lg-row gap-3">
-        <a class="nav-link active" aria-current="page" href="/">Home</a>
-        <a href="/proyectos" class="nav-link">Proyectos</a>
-        <a href="/sobre-mi" class="nav-link pe-3">Sobre mi</a>
+        <a class="nav-link active" aria-current="page" href="/blog-personal/">Home</a>
+        <a href="/blog-personal/proyectos" class="nav-link">Proyectos</a>
+        <a href="/blog-personal/sobre-mi" class="nav-link pe-3">Sobre mi</a>
       </div>
       <div class="form-check form-switch pt-3 pt-md-0 pt-lg-0">
-        <input class="form-check-input" type="checkbox" aria-label="Switch theme" role="switch" id="switchTheme" checked
-          onclick="changeTheme(true)">
+        <input class="form-check-input" type="checkbox" aria-label="Switch theme" role="switch" id="switchTheme" checked="" onclick="changeTheme(true)">
         <label class="form-check-label" for="switchTheme"></label>
       </div>
     </div>
@@ -38,7 +37,7 @@
     
       <h6 class="text-body">22 jun 2024</h6>
     
-    <img src="/assets/images/posts/20240623_npm_link.webp" class="w-100 h-50 pb-5 pt-4" alt="NPM Link">
+    <img src="/blog-personal/assets/images/posts/20240623_npm_link.webp" class="w-100 h-50 pb-5 pt-4" alt="NPM Link">
     <p>Este comando de node lo descubrí porque en el trabajo tenemos un paquete para manejar un módulo de la aplicación que creamos, y este modulo lo cargamos desde un paquete que manejamos aparte.</p>
 <p>Hasta hace unos días, la manera en que agregaba nuevas cambios a este paquete, era: hacer estos cambios, subirlos y publicar una nueva versión de la librería, y luego actualizaba el paquete en la aplicación principal, y verificaba que todo funcionara bien.</p>
 <p>Otra opción, sobre todo en cambios más chicos o puntuales, era realizar cambios en el el <code>node_modules</code> para verificar en la misma aplicación que funcionara todo bien y luego copiaba manualmente los cambios al repositorio de la dependencia una vez que haya terminado. Pero hay un enfoque mucho más claro: <code>npm link</code>.</p>
@@ -105,7 +104,7 @@ Permite ver el paquete generado antes de subirlo y que se publique. La salida es
 </tr>
 </tbody>
 </table>
-<hr style="height: .5px" />
+<hr style="height: .5px">
 <p>Enlaces útiles:
 <a href="https://medium.com/dailyjs/how-to-use-npm-link-7375b6219557">Medium</a> |
 <a href="https://ioflood.com/blog/npm-link/">ioflood</a></p>
@@ -120,14 +119,14 @@ Permite ver el paquete generado antes de subirlo y que se publique. La salida es
   <div class="text-center pt-3 pb-4">
     <a href="https://github.com/PereyraPaula" target="_blank" aria-label="Github profile" style="text-decoration: none; color: inherit;">
       <svg width="800" height="800" viewBox="0 0 20 20" alt="Icono de github" class="icon">
-        <path d="M10 0c6 0 10 5 10 10s-3 9-7 10l-1-1v-4c2 0 4-1 4-5l-1-3V4l-2 1a9 9 0 0 0-6 0L5 4v3l-1 3c0 4 2 5 4 5v1c-1 0-2 1-3-1l-2-1v1l1 1s1 2 4 2v1l-1 1c-4-1-7-5-7-10S4 0 10 0" fill="currentColor" fill-rule="evenodd"/>
+        <path d="M10 0c6 0 10 5 10 10s-3 9-7 10l-1-1v-4c2 0 4-1 4-5l-1-3V4l-2 1a9 9 0 0 0-6 0L5 4v3l-1 3c0 4 2 5 4 5v1c-1 0-2 1-3-1l-2-1v1l1 1s1 2 4 2v1l-1 1c-4-1-7-5-7-10S4 0 10 0" fill="currentColor" fill-rule="evenodd"></path>
       </svg>
     </a>
   </div>
 </footer>
 </body>
-<script src="/assets/js/bootstrap.bundle.min.js"></script>
-<script src="/assets/js/highlight.min.js"></script>
+<script src="/blog-personal/assets/js/bootstrap.bundle.min.js"></script>
+<script src="/blog-personal/assets/js/highlight.min.js"></script>
 <script>
   hljs.highlightAll();
 
